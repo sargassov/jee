@@ -3,7 +3,6 @@ package ru.sargassov.javaee;
 import java.io.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
-
 @WebServlet(name = "helloServlet", value = "/hello")
 public class HelloServlet extends HttpServlet {
     private String message;
@@ -20,5 +19,4 @@ public class HelloServlet extends HttpServlet {
         out.println("<h1>" + message + "</h1>");
         out.println("</body></html>");
     }
-
 }
